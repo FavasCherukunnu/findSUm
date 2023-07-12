@@ -14,10 +14,10 @@ int main()
         tempArr[tempArrIndex++] = arr[i];
         for(int j=0;j<size;j++){
             
-            
-            if(i==j){
+            if(j<=i){
                 continue;
             }
+            sum =0;
             
             //clearing temp aray
             for(int temp=0;temp<size;temp++){
@@ -25,8 +25,10 @@ int main()
             }
             tempArrIndex=0;
             //
-            sum = arr[i];
-            tempArr[tempArrIndex++] = arr[i];
+            for(int k=0;k<=i;k++){
+                sum += arr[k];
+                tempArr[tempArrIndex++] = arr[k];
+            }
             sum += arr[j];
             tempArr[tempArrIndex++] = arr[j];
             
@@ -39,6 +41,7 @@ int main()
                     tempArr[temp]=0;
                 }
             }
+            
             
         }
         
