@@ -7,7 +7,7 @@ int main()
     int givenNum= 6;
     int size=7;
     int tempArr[size],sum=0,tempArrIndex=0;
-    
+    int veruth;
     for(int i=0;i<size;i++){
         sum = arr[i];
         tempArrIndex=0;
